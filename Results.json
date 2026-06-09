@@ -1,0 +1,40 @@
+{
+  "dataset_name": "NASA Near-Earth Objects (NEO)",
+  "num_samples": "4687",
+  "features": [
+    "Absolute Magnitude",
+    "Est Dia in KM(max)",
+    "Relative Velocity km per sec",
+    "Miss Dist.(Astronomical)",
+    "Minimum Orbit Intersection",
+    "Orbit Uncertainity",
+    "Eccentricity",
+    "Semi Major Axis",
+    "Inclination",
+    "Orbital Period"
+  ],
+  "accuracy_scratch": "0.9542",
+  "accuracy_sklearn": "0.9456",
+  "selected_features": [
+    "Absolute Magnitude",
+    "Est Dia in KM(max)",
+    "Relative Velocity km per sec",
+    "Miss Dist.(Astronomical)",
+    "Minimum Orbit Intersection",
+    "Orbit Uncertainity",
+    "Eccentricity",
+    "Semi Major Axis",
+    "Inclination",
+    "Orbital Period"
+  ],
+  "removed_features": [
+    "Jupiter Tisserand Invariant",
+    "Asc Node Longitude",
+    "Perihelion Distance",
+    "Perihelion Arg",
+    "Aphelion Dist",
+    "Mean Anomaly",
+    "Mean Motion"
+  ],
+  "observations": "scratch NB got 0.9542 accuracy and sklearn got 0.9456. results are close which means the manual implementation is correct. removed correlated duplicate-unit columns to reduce independence assumption violations. accuracy is inflated due to class imbalance (84% not hazardous), recall is a better metric here."
+}
